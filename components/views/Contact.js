@@ -1,6 +1,5 @@
-export default function() {
-  return `
-  <form method="get">
+export default () => `
+  <form name="contact" method="get">
   <label>First Name: <input type="text" name="fname" id="fname"></label><br><br>
   <label>Last Name: <input type="text" name="lname" id="lname"></label><br><br>
   <label>Street: <input type="text" name="street" id="street"></label><br><br>
@@ -13,4 +12,3 @@ export default function() {
   <input type="submit" value="Contact"> <input type="reset">
   </form>
 `;
-}

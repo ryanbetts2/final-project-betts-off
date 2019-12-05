@@ -32,20 +32,20 @@ h1 { background-image: url(images/logo.jpg);
 }
 nav { padding-top: 10px;
       float: left;
-      width: 200px; 
+      width: 200px;
 }
-nav ul { list-style-type: none; 
+nav ul { list-style-type: none;
        padding-left: 20px;
 	 }
 nav li { padding-bottom: 5px;
        font-weight: bold;
 }
-nav a { text-decoration: #000000; 
+nav a { text-decoration: #000000;
          display: block;
-	     padding: 29px;    
+	     padding: 29px;
      background-color: #000000;
-         background-color: #000000;     
-	     border-bottom: 1px solid #F00000; 	
+         background-color: #000000;
+	     border-bottom: 1px solid #F00000;
          background-image: url(Arch.jpg);
          background-repeat: no-repeat;
          background-position: ;
@@ -59,7 +59,7 @@ nav a:hover { color: #3F4632; }
 
 main { background-color: #86BBBD;
           margin-left: 200px;
-          padding: 1px 20px 20px 20px;   
+          padding: 1px 20px 20px 20px;
 		  min-height: 300px;
 }
 main img { float: left;
@@ -75,7 +75,7 @@ footer { background-color: #76949F;
 }
 table { margin: auto;
         border: 5px solid #76949F;
-        width: 600px; 
+        width: 600px;
 		border-spacing: 0;
 }
 form {
@@ -84,13 +84,13 @@ form {
 }
 td, th { padding: 0.5em;
 		 border-style: none;
-         font-family: Arial, sans-serif; 
+         font-family: Arial, sans-serif;
 }
 
 caption { font-family: Verdana, sans-serif;
           font-weight: bold;
           font-size: 1.2em;
-          padding-bottom: 0.5em; 
+          padding-bottom: 0.5em;
 }
 .altrow { background-color: #76949F; }
 header {

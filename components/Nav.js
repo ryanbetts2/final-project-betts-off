@@ -1,4 +1,4 @@
-import { Links } from "../store";
+import { Links } from "store";
 function generateListMarkup(links) {
   return links.map(link => `<li><a href="./">${link}</a></li>`).join("");
 }
