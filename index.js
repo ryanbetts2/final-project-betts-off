@@ -1,12 +1,11 @@
 import { Header, Nav, Main, Footer } from "./components";
-import * as state from "./store";
 
 function render(st) {
   document.querySelector("#root").innerHTML = `
   ${Header(st)}
-  ${Nav()}
+  ${Nav(st)}
   ${Main(st)}
-  ${Footer()}
+  ${Footer(st)}
 `;
 
   document.querySelectorAll("nav a, footer a").forEach(link => {
