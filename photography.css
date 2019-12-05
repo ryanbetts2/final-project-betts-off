@@ -20,8 +20,7 @@ section {
   padding: var(--base-spacing);
 }
 
-h1 { background-image: url(images/logo.jpg);
-     background-repeat: no-repeat;
+h1 { background-repeat: no-repeat;
      background-color: #76949F;
 	 height: 60px;
 	 font-family: Georgia, "Times New Roman", serif;
@@ -46,7 +45,6 @@ nav a { text-decoration: #000000;
      background-color: #000000;
          background-color: #000000;
 	     border-bottom: 1px solid #F00000;
-         background-image: url(Arch.jpg);
          background-repeat: no-repeat;
          background-position: ;
         background-size: cover;
