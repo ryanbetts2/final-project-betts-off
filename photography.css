@@ -1,4 +1,4 @@
-/* header, nav, main, footer, aside { display: block; }
+header, nav, main, footer, aside { display: block; }
 * { box-sizing: border-box; }
 body { background-color: #533747;
        font-family: Verdana, Arial, sans-serif;
@@ -41,7 +41,8 @@ nav li { padding-bottom: 5px;
 }
 nav a { text-decoration: #000000;
          display: block;
-	     padding: 29px;
+       padding: 29px;
+       background-image: url(https://picsum.photos/900/600);
      background-color: #000000;
          background-color: #000000;
 	     border-bottom: 1px solid #F00000;
@@ -105,11 +106,17 @@ header img {
   form > div div {
     max-width: 30vw;
   }
+  main { background-color: #86BBBD;
+    margin-left: 200px;
+    padding: 1px 20px 20px 20px;
+min-height: 300px;
+}
 
   input {
     width: 93%;
   }
-
+  #wrapper {
+}
   textarea {
     max-width: 800px;
     width: 25vw;
@@ -142,242 +149,6 @@ header img {
     display: flex;
   }
 
-  .flex-column--desktop {
-    flex-direction: column;
-  }
-
-  .justify-space-around--desktop {
-    justify-content: space-around;
-  }
-
-  .is-hidden--desktop {
-    font-size: 0;
-    height: 0;
-  }
-
-  .is-shown--desktop {
-    font-size: initial;
-    height: initial;
-  }
-} */
-html {
-  --primary: #6200ee;
-  --primary-variant: #3700b3;
-  --secondary: #03dac6;
-  --secondary-variant: #018786;
-  --error: #b00020;
-  --base-spacing: 8px;
-
-  font-size: 10px;
-}
-
-section {
-  padding: var(--base-spacing);
-}
-
-header,
-section:nth-of-type(odd),
-footer {
-  background: var(--primary);
-}
-
-header,
-nav {
-  padding: calc(var(--base-spacing) * 2);
-}
-
-nav,
-section:nth-of-type(even) {
-  background: var(--secondary);
-}
-
-label,
-input {
-  margin: var(--base-spacing) 0;
-}
-
-input,
-textarea {
-  border-radius: 3px;
-}
-
-header,
-form,
-input[type="select"] {
-  display: flex;
-}
-
-header {
-  align-items: center;
-  flex-direction: column;
-}
-
-/* Space represents a GENERAL CHILD SELECTOR. */
-header img {
-  border-radius: 50%;
-  box-shadow: calc(var(--base-spacing) * 0.5) calc(var(--base-spacing) * 0.5)
-    var(--base-spacing);
-}
-
-h1,
-h2,
-h3,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
-}
-
-nav {
-  min-height: calc(var(--base-spacing) * 12);
-  text-align: center;
-}
-
-nav li {
-  padding: calc(var(--base-spacing) * 1.5) 0;
-}
-
-nav,
-p,
-a,
-label {
-  font-size: 1.563em;
-}
-
-nav a {
-  text-decoration: none;
-}
-
-.fas {
-  font-size: 4em;
-}
-
-nav .fas {
-  position: absolute;
-  transform: translateX(calc(50vw - calc(var(--base-spacing) * 9)));
-}
-
-h1 {
-  font-size: 3.052em;
-  text-align: center;
-}
-
-h2 {
-  font-size: 2.441em;
-}
-
-h3 {
-  font-size: 1.953em;
-}
-
-form {
-  flex-direction: column;
-  padding: calc(var(--base-spacing) * 2);
-}
-
-input[type="submit"] {
-  justify-content: center;
-  width: calc(var(--base-spacing) * 10);
-}
-
-.hero {
-  align-items: center;
-  background: url(https://picsum.photos/900/600) no-repeat top center;
-  background-size: cover;
-  display: flex;
-  height: 25vh;
-  justify-content: center;
-}
-
-.is-hidden--mobile {
-  font-size: 0;
-  height: 0;
-}
-
-.btn {
-  background: var(--secondary);
-  border-radius: var(--base-spacing);
-  color: whitesmoke;
-  padding: var(--base-spacing);
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-section .btn {
-  background: yellow;
-  color: black;
-  display: inline-block;
-  margin: var(--base-spacing) 0;
-}
-
-footer,
-footer a {
-  color: white;
-}
-
-footer {
-  color: white;
-  padding: calc(var(--base-spacing) * 2);
-}
-
-footer ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-footer p {
-  margin-top: 0;
-}
-
-@media screen and (min-width: 768px) {
-  form > div div {
-    max-width: 30vw;
-  }
-
-  input {
-    width: 93%;
-  }
-
-  textarea {
-    max-width: 800px;
-    width: 90vw;
-  }
-
-  footer ul {
-    justify-content: space-between;
-  }
-
-  .flex--tablet {
-    display: flex;
-  }
-
-  .justify-content-space-between--tablet {
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  header {
-    flex-direction: row;
-  }
-
-  .hero {
-    background-image: url(https://picsum.photos/1920/1080);
-    min-height: 50vh;
-  }
-
-  section .btn {
-    margin-top: auto;
-    max-width: calc(var(--base-spacing) * 15);
-    text-align: center;
-  }
-
-  .flex--desktop {
-    display: flex;
-  }
 
   .flex-column--desktop {
     flex-direction: column;
