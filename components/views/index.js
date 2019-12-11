@@ -1,3 +1,3 @@
-export { default as Home } from "./Home";
-export { default as Menu } from "./Menu";
-export { default as Contact } from "./Contact";
+export { default as AddCustomer } from "./AddCustomer";
+export { default as Discount } from "./Discount";
+export { default as Sale } from "./Sale";
