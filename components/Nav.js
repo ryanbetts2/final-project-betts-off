@@ -1,16 +1,13 @@
-import { Links } from "../store";
-
-function generateListMarkup(links) {
-  return links.map(link => `<li><a href="./">${link}</a></li>`).join("");
+function btnsBuilder(buttons) {
+  return buttons
+    .map(button => `<li><a href="./${button}" data-navigo>${button}</a></li>`)
+    .join("");
 }
 
-export default () => `
-  <!-- <nav> should be only be used for the main navigation for the page. -->
+export default ({ buttons }) => `
   <nav>
-    <ul
-      class="flex--desktop justify-space-around--desktop is-hidden--mobile is-shown--desktop"
-    >
-      ${generateListMarkup(Links)}
+    <ul>
+      ${btnsBuilder(buttons)}
     </ul>
   </nav>
-  `;
+`;
