@@ -2,6 +2,6 @@ import * as views from "./views";
 
 export default st => `
   <main>
-    ${views[st.view]()}
+    ${views[st.currentView]()}
   </main>
 `;
